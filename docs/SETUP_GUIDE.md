@@ -157,6 +157,7 @@ Open **Deploys** in Netlify to watch progress. If a build fails, click it to see
 | `npm install` shows red text about the Node version | Install Node 22 LTS from nodejs.org. |
 | Page is blank after deploy | Open the browser console (F12 → Console) and read the red message. Most often the two environment variables are missing or have a typo — fix them in Netlify and trigger a new deploy. |
 | Yellow notice "Database not connected yet" | The two `VITE_…` values are missing. Locally: check `.env`. Live: check Netlify environment variables, then redeploy. |
+| Netlify "Site not found" page (often after renaming the Netlify project) | The old `….netlify.app` address no longer exists. In Supabase → **Authentication → URL Configuration**, set **Site URL** and **Redirect URLs** to the new Netlify address, then request a fresh sign-in link. Share the new address with your team. |
 | "That sign-in link expired or was already used" | Links work once and expire quickly. Request a fresh one and open it right away, in the same browser. |
 | Sign-in link opens `localhost` or the wrong address | Fix **Site URL** and **Redirect URLs** (Part 4, step 3). |
 | "Could not save … permission denied" | The SQL in Part 4 step 1 wasn't run, or your email isn't in `manager_emails` (for managers/holidays). |
