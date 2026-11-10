@@ -1,0 +1,33 @@
+  /* Auth screens */
+  .auth-wrap{max-width:400px;margin:60px auto;text-align:center;}
+  .auth-wrap .icon-badge{width:44px;height:44px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;}
+  .auth-wrap h2{font-family:'Space Grotesk',sans-serif;font-size:19px;margin:0 0 8px;}
+  .auth-wrap p{font-size:13.5px;color:var(--ink-soft);line-height:1.5;margin:0 0 22px;}
+  .auth-wrap .card{padding:24px;text-align:left;}
+  .auth-wrap .field{margin-bottom:14px;}
+  .auth-wrap .field label{display:block;margin-bottom:6px;}
+  .auth-wrap input, .auth-wrap select{width:100%;}
+  .role-pick{display:flex;gap:10px;margin-bottom:14px;}
+  .role-pick button{flex:1;padding:12px;border:1.5px solid var(--line);border-radius:8px;background:var(--paper);font-weight:600;font-size:13.5px;cursor:pointer;transition:all .15s;}
+  .role-pick button.active{border-color:var(--navy);background:var(--wfh-bg);color:var(--navy);}
+  .role-pick button:disabled{opacity:.45;cursor:not-allowed;}
+  .signout-row{display:flex;align-items:center;gap:10px;margin-left:10px;}
+  .who-badge{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-soft);}
+  .who-badge .dot-av{width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;font-family:'Space Grotesk',sans-serif;}
+
+  @media(max-width:640px){
+    .status-grid{grid-template-columns:repeat(3,1fr);gap:8px;}
+    .status-card{padding:12px 6px 11px;text-align:center;}
+    .status-card .icon{margin:0 auto 8px;}
+    .status-card .desc{display:none;}
+    .status-card .name{font-size:13.5px;}
+    .status-card .check{top:8px;right:8px;width:13px;height:13px;}
+    .ledger-row input[type=time], .ledger-row input[type=text]{font-size:16px;padding:10px;}
+    .ledger-row .e-hours{padding:11px 2px;}
+    .ledger-row{grid-template-columns:1fr 1fr 54px 34px;grid-template-areas:"start end hrs del" "desc desc desc desc";}
+    .ledger-row input[type=time]:nth-child(1){grid-area:start;}
+    .ledger-row input[type=time]:nth-child(2){grid-area:end;}
+    .ledger-row .e-hours{grid-area:hrs;}
+    .ledger-row input[type=text]{grid-area:desc;}
+    .ledger-row button{grid-area:del;}
+  }

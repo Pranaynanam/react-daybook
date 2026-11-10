@@ -1,0 +1,26 @@
+{
+  "name": "daybook",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "demo": "vite --mode demo",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "read-excel-file": "^9.3.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.5"
+  },
+  "description": "Daybook \u2014 team daily reports, timesheets, tasks and holidays (React + Vite + Supabase)",
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

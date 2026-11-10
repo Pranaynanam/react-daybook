@@ -1,0 +1,33 @@
+  :root{
+    --paper:#F7F5F0;
+    --paper-raised:#FFFFFF;
+    --ink:#1C2321;
+    --ink-soft:#5B625E;
+    --navy:#2C4A52;
+    --navy-dim:#3E6570;
+    --line:#DEDAD1;
+    --line-soft:#EAE7E0;
+    --office:#3D7A5C;
+    --office-bg:#E7F1EB;
+    --wfh:#3E6FA8;
+    --wfh-bg:#E8EFF8;
+    --leave:#B8763E;
+    --leave-bg:#F5EBDF;
+    --hol:#7452A0;
+    --hol-bg:#F0EAF7;
+    --danger:#B54545;
+    --radius:10px;
+    --shadow:0 1px 2px rgba(28,35,33,0.06), 0 8px 24px rgba(28,35,33,0.05);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:#CFE3D6;}
+  .app{min-height:100vh;}
+  .auth-page{padding:28px 20px 60px;}
+

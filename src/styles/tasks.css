@@ -1,0 +1,18 @@
+  /* Tasks */
+  .task-card{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;background:var(--paper-raised);}
+  .task-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .task-title{font-weight:600;font-size:14px;color:var(--ink);}
+  .task-title.done{text-decoration:line-through;color:var(--ink-soft);}
+  .task-desc{font-size:13px;color:var(--ink-soft);margin-top:4px;line-height:1.5;}
+  .task-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;font-size:12px;color:var(--ink-soft);}
+  .task-due{font-family:'JetBrains Mono',monospace;}
+  .task-due.overdue{color:var(--danger);font-weight:600;}
+  .status-pill{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+  .status-pill.todo{background:#EFEDE7;color:var(--ink-soft);}
+  .status-pill.in_progress{background:var(--wfh-bg);color:var(--wfh);}
+  .status-pill.done{background:var(--office-bg);color:var(--office);}
+  .assignee-check{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;margin-bottom:6px;cursor:pointer;font-size:13.5px;}
+  .assignee-check input{width:15px;height:15px;}
+  .assignee-check.checked{border-color:var(--navy);background:var(--wfh-bg);}
+  .task-empty{text-align:center;padding:40px 20px;color:var(--ink-soft);}
+
